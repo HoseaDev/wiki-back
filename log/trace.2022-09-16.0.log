@@ -1,0 +1,1044 @@
+2022-09-16 00:23:10.197 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 00:23:10.200 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 00:23:10.200 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 00:23:10.201 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 00:23:10.201 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 00:23:10.201 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 00:23:10.202 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 00:23:10.202 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 00:23:10.248 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 00:23:10.248 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 00:23:10.295 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 00:23:10.296 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 12
+2022-09-16 00:23:10.296 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 00:23:10.296 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 00:23:10.297 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 00:23:10.342 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 00:23:10.342 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:23:10.342 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:23:10.343 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 11, 2, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:23:10.343 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 00:23:10.343 INFO  com.hosea.wiki.service.EbookService               :43   [32m                  [0;39m 总条数:12
+2022-09-16 00:23:10.343 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总页数:4
+2022-09-16 00:23:10.343 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":11,"category2Id":2,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":12},"msg":"成功"}
+2022-09-16 00:23:10.343 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：142 ms -------------
+2022-09-16 00:23:10.344 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：144 ms -------------
+2022-09-16 00:23:11.737 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 00:23:11.738 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 00:23:11.738 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 00:23:11.739 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 00:23:11.739 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 00:23:11.739 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 00:23:11.739 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 00:23:11.740 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 00:23:11.786 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 00:23:11.786 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 00:23:11.831 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 00:23:11.831 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 12
+2022-09-16 00:23:11.831 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 00:23:11.832 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 00:23:11.833 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 00:23:11.877 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 00:23:11.877 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:23:11.878 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:23:11.878 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 11, 2, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:23:11.878 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 00:23:11.878 INFO  com.hosea.wiki.service.EbookService               :43   [32m                  [0;39m 总条数:12
+2022-09-16 00:23:11.879 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总页数:4
+2022-09-16 00:23:11.879 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":11,"category2Id":2,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":12},"msg":"成功"}
+2022-09-16 00:23:11.879 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：140 ms -------------
+2022-09-16 00:23:11.880 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：142 ms -------------
+2022-09-16 00:26:17.055 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 00:26:17.055 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 00:26:17.055 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 00:26:17.056 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 00:26:17.056 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 00:26:17.056 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 00:26:17.056 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 00:26:17.057 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 00:26:17.103 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 00:26:17.103 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 00:26:17.148 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 00:26:17.149 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 12
+2022-09-16 00:26:17.149 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 00:26:17.149 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 00:26:17.150 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 00:26:17.195 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 00:26:17.195 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:26:17.195 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:26:17.196 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 11, 2, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:26:17.196 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 00:26:17.196 INFO  com.hosea.wiki.service.EbookService               :43   [32m                  [0;39m 总条数:12
+2022-09-16 00:26:17.196 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总页数:4
+2022-09-16 00:26:17.196 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":11,"category2Id":2,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":12},"msg":"成功"}
+2022-09-16 00:26:17.196 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：140 ms -------------
+2022-09-16 00:26:17.197 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：141 ms -------------
+2022-09-16 00:26:18.752 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 00:26:18.753 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 00:26:18.753 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 00:26:18.754 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 00:26:18.754 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 00:26:18.754 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 00:26:18.754 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 00:26:18.755 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 00:26:18.801 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 00:26:18.801 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 00:26:18.856 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 00:26:18.857 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 12
+2022-09-16 00:26:18.857 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 00:26:18.857 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 00:26:18.858 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 00:26:18.903 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 00:26:18.903 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:26:18.903 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:26:18.903 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 11, 2, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:26:18.904 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 00:26:18.904 INFO  com.hosea.wiki.service.EbookService               :43   [32m                  [0;39m 总条数:12
+2022-09-16 00:26:18.904 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总页数:4
+2022-09-16 00:26:18.904 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":11,"category2Id":2,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":12},"msg":"成功"}
+2022-09-16 00:26:18.905 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：151 ms -------------
+2022-09-16 00:26:18.905 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：152 ms -------------
+2022-09-16 00:26:33.694 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 00:26:33.695 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 00:26:33.695 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 00:26:33.695 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 00:26:33.696 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 00:26:33.696 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 00:26:33.696 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 00:26:33.696 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 00:26:33.741 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 00:26:33.742 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 00:26:33.788 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 00:26:33.788 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 12
+2022-09-16 00:26:33.788 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 00:26:33.789 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 00:26:33.789 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 00:26:33.835 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 00:26:33.835 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:26:33.835 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:26:33.835 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 11, 2, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:26:33.836 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 00:26:33.836 INFO  com.hosea.wiki.service.EbookService               :43   [32m                  [0;39m 总条数:12
+2022-09-16 00:26:33.836 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总页数:4
+2022-09-16 00:26:33.836 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":11,"category2Id":2,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":12},"msg":"成功"}
+2022-09-16 00:26:33.836 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：141 ms -------------
+2022-09-16 00:26:33.837 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：142 ms -------------
+2022-09-16 00:26:44.247 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 00:26:44.248 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 00:26:44.248 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 00:26:44.248 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 00:26:44.249 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 00:26:44.249 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 00:26:44.249 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 00:26:44.249 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 00:26:44.295 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 00:26:44.295 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 00:26:44.343 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 00:26:44.343 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 12
+2022-09-16 00:26:44.343 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 00:26:44.344 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 00:26:44.344 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 00:26:44.393 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 00:26:44.393 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:26:44.394 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:26:44.394 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 11, 2, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:26:44.394 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 00:26:44.394 INFO  com.hosea.wiki.service.EbookService               :43   [32m                  [0;39m 总条数:12
+2022-09-16 00:26:44.394 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总页数:4
+2022-09-16 00:26:44.395 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":11,"category2Id":2,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":12},"msg":"成功"}
+2022-09-16 00:26:44.395 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：147 ms -------------
+2022-09-16 00:26:44.395 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：147 ms -------------
+2022-09-16 00:26:55.757 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 00:26:55.757 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 00:26:55.758 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 00:26:55.758 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 00:26:55.758 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 00:26:55.758 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 00:26:55.758 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 00:26:55.758 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 00:26:55.807 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 00:26:55.807 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 00:26:55.855 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 00:26:55.856 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 12
+2022-09-16 00:26:55.856 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 00:26:55.856 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 00:26:55.856 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 00:26:55.905 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 00:26:55.905 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:26:55.906 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:26:55.906 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 11, 2, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:26:55.906 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 00:26:55.906 INFO  com.hosea.wiki.service.EbookService               :43   [32m                  [0;39m 总条数:12
+2022-09-16 00:26:55.906 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总页数:4
+2022-09-16 00:26:55.906 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":11,"category2Id":2,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":12},"msg":"成功"}
+2022-09-16 00:26:55.907 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：149 ms -------------
+2022-09-16 00:26:55.907 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：149 ms -------------
+2022-09-16 00:26:58.316 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 00:26:58.316 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 00:26:58.316 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 00:26:58.316 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 00:26:58.317 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 00:26:58.317 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 00:26:58.317 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 00:26:58.317 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 00:26:58.365 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 00:26:58.365 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 00:26:58.414 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 00:26:58.414 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 12
+2022-09-16 00:26:58.415 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 00:26:58.415 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 00:26:58.415 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 00:26:58.463 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 00:26:58.463 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:26:58.464 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:26:58.464 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 11, 2, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 00:26:58.464 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 00:26:58.464 INFO  com.hosea.wiki.service.EbookService               :43   [32m                  [0;39m 总条数:12
+2022-09-16 00:26:58.464 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总页数:4
+2022-09-16 00:26:58.464 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":11,"category2Id":2,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":12},"msg":"成功"}
+2022-09-16 00:26:58.465 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：149 ms -------------
+2022-09-16 00:26:58.465 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：149 ms -------------
+2022-09-16 21:49:20.748 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2022-09-16 21:49:21.054 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8801"]
+2022-09-16 21:49:21.054 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-16 21:49:21.057 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-09-16 21:49:21.069 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [HikariPool-8 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-09-16 21:49:21.073 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8801"]
+2022-09-16 21:49:21.077 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8801"]
+2022-09-16 21:49:21.082 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-8 - Shutdown initiated...
+2022-09-16 21:49:21.084 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-8 - Shutdown completed.
+2022-09-16 21:49:21.432 INFO  com.hosea.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_231 on DESKTOP-UFTGTM0 with PID 15996 (E:\javaProject\wiki\wiki\target\classes started by heliu in E:\javaProject\wiki\wiki)
+2022-09-16 21:49:21.432 INFO  com.hosea.wiki.WikiApplication                    :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-16 21:49:21.829 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8801 (http)
+2022-09-16 21:49:21.829 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-09-16 21:49:21.829 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2022-09-16 21:49:21.829 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-09-16 21:49:21.829 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-16 21:49:21.832 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2022-09-16 21:49:21.833 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8801"]
+2022-09-16 21:49:21.833 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-16 21:49:21.833 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-16 21:49:21.862 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-16 21:49:21.862 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 428 ms
+2022-09-16 21:49:22.113 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-16 21:49:22.121 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8801"]
+2022-09-16 21:49:22.123 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8801 (http) with context path ''
+2022-09-16 21:49:22.126 INFO  com.hosea.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.749 seconds (JVM running for 112496.102)
+2022-09-16 21:49:22.126 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-16 21:49:22.127 INFO  com.hosea.wiki.WikiApplication                    :20   [32m                  [0;39m 启动成功
+2022-09-16 21:49:22.127 INFO  com.hosea.wiki.WikiApplication                    :21   [32m                  [0;39m 地址:	http://127.0.0.1:8801
+2022-09-16 21:53:59.994 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 3 class path changes (3 additions, 0 deletions, 0 modifications)
+2022-09-16 21:54:00.276 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8801"]
+2022-09-16 21:54:00.277 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-16 21:54:00.280 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8801"]
+2022-09-16 21:54:00.282 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8801"]
+2022-09-16 21:54:00.417 INFO  com.hosea.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_231 on DESKTOP-UFTGTM0 with PID 15996 (E:\javaProject\wiki\wiki\target\classes started by heliu in E:\javaProject\wiki\wiki)
+2022-09-16 21:54:00.417 INFO  com.hosea.wiki.WikiApplication                    :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-16 21:54:00.624 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8801 (http)
+2022-09-16 21:54:00.624 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-09-16 21:54:00.624 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2022-09-16 21:54:00.624 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-09-16 21:54:00.624 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-16 21:54:00.624 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2022-09-16 21:54:00.625 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8801"]
+2022-09-16 21:54:00.625 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-16 21:54:00.625 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-16 21:54:00.649 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-16 21:54:00.650 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 232 ms
+2022-09-16 21:54:00.864 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-16 21:54:00.870 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8801"]
+2022-09-16 21:54:00.871 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8801 (http) with context path ''
+2022-09-16 21:54:00.874 INFO  com.hosea.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.478 seconds (JVM running for 112774.85)
+2022-09-16 21:54:00.874 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-16 21:54:00.875 INFO  com.hosea.wiki.WikiApplication                    :20   [32m                  [0;39m 启动成功
+2022-09-16 21:54:00.875 INFO  com.hosea.wiki.WikiApplication                    :21   [32m                  [0;39m 地址:	http://127.0.0.1:8801
+2022-09-16 22:03:41.606 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-16 22:03:41.607 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-09-16 22:03:41.607 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-09-16 22:03:41.608 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:03:41.608 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:03:41.609 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:03:41.614 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:03:41.615 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:03:41.615 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 22:03:41.615 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:03:41.617 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 22:03:41.622 WARN  com.zaxxer.hikari.HikariConfig                    :1084 [32m                  [0;39m HikariPool-9 - idleTimeout is close to or more than maxLifetime, disabling it.
+2022-09-16 22:03:41.622 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-9 - Starting...
+2022-09-16 22:03:42.142 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-9 - Start completed.
+2022-09-16 22:03:42.142 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 22:03:42.143 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 22:03:42.189 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 22:03:42.189 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 12
+2022-09-16 22:03:42.190 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 22:03:42.191 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 22:03:42.191 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 22:03:42.234 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 22:03:42.234 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:03:42.234 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:03:42.235 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 11, 2, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:03:42.235 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 22:03:42.235 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总条数:12
+2022-09-16 22:03:42.235 INFO  com.hosea.wiki.service.EbookService               :45   [32m                  [0;39m 总页数:4
+2022-09-16 22:03:42.237 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":11,"category2Id":2,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":12},"msg":"成功"}
+2022-09-16 22:03:42.237 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：623 ms -------------
+2022-09-16 22:03:42.241 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：632 ms -------------
+2022-09-16 22:03:43.567 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:03:43.567 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:03:43.568 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:03:43.569 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:03:43.569 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:03:43.570 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 22:03:43.570 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:03:43.570 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 22:03:43.618 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 22:03:43.619 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 22:03:43.663 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 22:03:43.663 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 12
+2022-09-16 22:03:43.663 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 22:03:43.663 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 22:03:43.663 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 22:03:43.706 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 22:03:43.707 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:03:43.707 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:03:43.707 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 11, 2, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:03:43.707 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 22:03:43.708 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总条数:12
+2022-09-16 22:03:43.708 INFO  com.hosea.wiki.service.EbookService               :45   [32m                  [0;39m 总页数:4
+2022-09-16 22:03:43.708 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":11,"category2Id":2,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":12},"msg":"成功"}
+2022-09-16 22:03:43.708 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：140 ms -------------
+2022-09-16 22:03:43.709 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：141 ms -------------
+2022-09-16 22:05:05.542 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:05:05.542 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:05:05.542 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:05:05.542 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:05:05.543 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:05:05.543 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 22:05:05.543 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:05:05.543 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 22:05:05.594 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 22:05:05.595 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 22:05:05.641 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 22:05:05.642 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 12
+2022-09-16 22:05:05.642 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 22:05:05.642 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 22:05:05.642 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 22:05:05.688 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 22:05:05.688 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:05:05.689 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:05:05.689 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 11, 2, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:05:05.689 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 22:05:05.689 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总条数:12
+2022-09-16 22:05:05.689 INFO  com.hosea.wiki.service.EbookService               :45   [32m                  [0;39m 总页数:4
+2022-09-16 22:05:05.690 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":11,"category2Id":2,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":12},"msg":"成功"}
+2022-09-16 22:05:05.690 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：148 ms -------------
+2022-09-16 22:05:05.690 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：148 ms -------------
+2022-09-16 22:05:06.625 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:05:06.625 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:05:06.626 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:05:06.626 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:05:06.626 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:05:06.626 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 22:05:06.627 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:05:06.627 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 22:05:06.672 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 22:05:06.673 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 22:05:06.719 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 22:05:06.719 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 12
+2022-09-16 22:05:06.719 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 22:05:06.720 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 22:05:06.720 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 22:05:06.766 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 22:05:06.766 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:05:06.766 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:05:06.767 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 11, 2, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:05:06.767 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 22:05:06.767 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总条数:12
+2022-09-16 22:05:06.767 INFO  com.hosea.wiki.service.EbookService               :45   [32m                  [0;39m 总页数:4
+2022-09-16 22:05:06.767 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":11,"category2Id":2,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":12},"msg":"成功"}
+2022-09-16 22:05:06.767 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：141 ms -------------
+2022-09-16 22:05:06.768 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：142 ms -------------
+2022-09-16 22:05:15.541 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:05:15.541 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book OPTIONS
+2022-09-16 22:05:15.541 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:05:15.544 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：3 ms -------------
+2022-09-16 22:05:15.547 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:05:15.547 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book DELETE
+2022-09-16 22:05:15.547 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:05:15.550 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：3 ms -------------
+2022-09-16 22:05:19.064 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:05:19.065 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book DELETE
+2022-09-16 22:05:19.065 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:05:19.065 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：0 ms -------------
+2022-09-16 22:05:34.861 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:05:34.861 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book DELETE
+2022-09-16 22:05:34.861 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:05:34.865 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：3 ms -------------
+2022-09-16 22:05:36.014 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:05:36.015 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book DELETE
+2022-09-16 22:05:36.015 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:05:36.016 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：1 ms -------------
+2022-09-16 22:05:36.569 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:05:36.569 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book DELETE
+2022-09-16 22:05:36.569 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:05:36.570 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：1 ms -------------
+2022-09-16 22:05:39.467 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:05:39.468 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book DELETE
+2022-09-16 22:05:39.468 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:05:39.469 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：1 ms -------------
+2022-09-16 22:06:06.526 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-9 - Shutdown initiated...
+2022-09-16 22:06:06.528 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-9 - Shutdown completed.
+2022-09-16 22:06:10.245 INFO  com.hosea.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_231 on DESKTOP-UFTGTM0 with PID 35024 (E:\javaProject\wiki\wiki\target\classes started by heliu in E:\javaProject\wiki\wiki)
+2022-09-16 22:06:10.247 INFO  com.hosea.wiki.WikiApplication                    :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-16 22:06:10.287 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-16 22:06:10.287 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-16 22:06:11.225 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8801 (http)
+2022-09-16 22:06:11.226 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-09-16 22:06:11.226 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2022-09-16 22:06:11.226 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-09-16 22:06:11.226 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-16 22:06:11.234 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2022-09-16 22:06:11.240 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:06:11.240 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-16 22:06:11.241 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-16 22:06:11.327 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-16 22:06:11.327 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1040 ms
+2022-09-16 22:06:12.008 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-16 22:06:12.020 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:06:12.033 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8801 (http) with context path ''
+2022-09-16 22:06:12.042 INFO  com.hosea.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 2.16 seconds (JVM running for 3.142)
+2022-09-16 22:06:12.045 INFO  com.hosea.wiki.WikiApplication                    :20   [32m                  [0;39m 启动成功
+2022-09-16 22:06:12.045 INFO  com.hosea.wiki.WikiApplication                    :21   [32m                  [0;39m 地址:	http://127.0.0.1:8801
+2022-09-16 22:06:14.726 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-16 22:06:14.727 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-09-16 22:06:14.727 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-09-16 22:06:14.732 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:06:14.733 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book DELETE
+2022-09-16 22:06:14.733 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:06:14.745 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：12 ms -------------
+2022-09-16 22:06:15.549 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:06:15.549 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book DELETE
+2022-09-16 22:06:15.549 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:06:15.550 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：0 ms -------------
+2022-09-16 22:06:19.621 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:06:19.622 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book DELETE
+2022-09-16 22:06:19.622 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:06:19.623 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：1 ms -------------
+2022-09-16 22:06:19.875 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:06:19.876 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book DELETE
+2022-09-16 22:06:19.876 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:06:19.878 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：2 ms -------------
+2022-09-16 22:06:24.452 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:06:24.452 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book DELETE
+2022-09-16 22:06:24.452 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:06:24.453 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：1 ms -------------
+2022-09-16 22:06:24.647 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:06:24.647 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book DELETE
+2022-09-16 22:06:24.647 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:06:24.648 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：1 ms -------------
+2022-09-16 22:07:45.239 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-09-16 22:07:45.531 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:07:45.531 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-16 22:07:45.532 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-09-16 22:07:45.534 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:07:45.535 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:07:45.669 INFO  com.hosea.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_231 on DESKTOP-UFTGTM0 with PID 35024 (E:\javaProject\wiki\wiki\target\classes started by heliu in E:\javaProject\wiki\wiki)
+2022-09-16 22:07:45.669 INFO  com.hosea.wiki.WikiApplication                    :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-16 22:07:45.915 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8801 (http)
+2022-09-16 22:07:45.915 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-09-16 22:07:45.915 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2022-09-16 22:07:45.916 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-09-16 22:07:45.916 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-16 22:07:45.916 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2022-09-16 22:07:45.916 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:07:45.917 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-16 22:07:45.917 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-16 22:07:45.946 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-16 22:07:45.946 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 275 ms
+2022-09-16 22:07:46.188 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-16 22:07:46.196 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:07:46.197 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8801 (http) with context path ''
+2022-09-16 22:07:46.201 INFO  com.hosea.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.56 seconds (JVM running for 97.3)
+2022-09-16 22:07:46.202 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-16 22:07:46.202 INFO  com.hosea.wiki.WikiApplication                    :20   [32m                  [0;39m 启动成功
+2022-09-16 22:07:46.203 INFO  com.hosea.wiki.WikiApplication                    :21   [32m                  [0;39m 地址:	http://127.0.0.1:8801
+2022-09-16 22:07:54.696 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-16 22:07:54.697 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-09-16 22:07:54.698 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-09-16 22:07:54.699 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:07:54.699 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:07:54.699 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:07:54.714 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:07:54.714 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:07:54.715 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 22:07:54.715 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:07:54.758 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 22:07:54.819 WARN  com.zaxxer.hikari.HikariConfig                    :1084 [32m                  [0;39m HikariPool-1 - idleTimeout is close to or more than maxLifetime, disabling it.
+2022-09-16 22:07:54.819 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2022-09-16 22:07:55.898 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2022-09-16 22:07:55.904 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 22:07:55.917 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 22:07:55.960 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:07:55.961 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:07:55.961 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:07:55.962 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:07:55.962 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:07:55.962 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 22:07:55.962 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:07:55.963 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 22:07:55.970 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 22:07:55.970 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 12
+2022-09-16 22:07:55.971 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 22:07:55.975 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 22:07:55.976 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 22:07:56.019 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 22:07:56.020 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:07:56.020 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:07:56.021 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 11, 2, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:07:56.021 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 22:07:56.022 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 22:07:56.023 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 22:07:56.024 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总条数:12
+2022-09-16 22:07:56.024 INFO  com.hosea.wiki.service.EbookService               :45   [32m                  [0;39m 总页数:4
+2022-09-16 22:07:56.029 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":11,"category2Id":2,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":12},"msg":"成功"}
+2022-09-16 22:07:56.029 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：1316 ms -------------
+2022-09-16 22:07:56.044 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：1345 ms -------------
+2022-09-16 22:07:56.066 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 22:07:56.067 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 12
+2022-09-16 22:07:56.067 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 22:07:56.068 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 22:07:56.068 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 22:07:56.111 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 22:07:56.111 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:07:56.111 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:07:56.112 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 11, 2, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:07:56.113 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 22:07:56.113 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总条数:12
+2022-09-16 22:07:56.113 INFO  com.hosea.wiki.service.EbookService               :45   [32m                  [0;39m 总页数:4
+2022-09-16 22:07:56.114 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":11,"category2Id":2,"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":3,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":12},"msg":"成功"}
+2022-09-16 22:07:56.114 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：152 ms -------------
+2022-09-16 22:07:56.115 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：154 ms -------------
+2022-09-16 22:07:58.294 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:07:58.295 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book POST
+2022-09-16 22:07:58.295 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:07:58.314 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:07:58.314 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book POST
+2022-09-16 22:07:58.314 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.delete
+2022-09-16 22:07:58.314 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:07:58.315 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"id":3}]
+2022-09-16 22:07:58.357 DEBUG c.h.wiki.dao.mapper.EbookMapper.deleteByPrimaryKey:137  [32m                  [0;39m ==>  Preparing: delete from ebook where id = ?
+2022-09-16 22:07:58.357 DEBUG c.h.wiki.dao.mapper.EbookMapper.deleteByPrimaryKey:137  [32m                  [0;39m ==> Parameters: 3(Long)
+2022-09-16 22:07:58.444 DEBUG c.h.wiki.dao.mapper.EbookMapper.deleteByPrimaryKey:137  [32m                  [0;39m <==    Updates: 1
+2022-09-16 22:07:58.444 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"msg":"成功"}
+2022-09-16 22:07:58.445 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：131 ms -------------
+2022-09-16 22:07:58.445 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：150 ms -------------
+2022-09-16 22:08:16.957 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:08:16.958 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:08:16.958 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:08:16.958 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:08:16.958 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:08:16.959 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 22:08:16.959 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:08:16.959 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 22:08:17.003 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 22:08:17.004 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 22:08:17.046 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 22:08:17.047 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 11
+2022-09-16 22:08:17.047 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 22:08:17.047 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 22:08:17.048 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 22:08:17.090 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 22:08:17.090 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:08:17.091 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:08:17.091 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 4, Mysql 入门教程, null, null, 零基础入门 Mysql 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:08:17.092 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 22:08:17.092 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总条数:11
+2022-09-16 22:08:17.092 INFO  com.hosea.wiki.service.EbookService               :45   [32m                  [0;39m 总页数:4
+2022-09-16 22:08:17.092 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Mysql 开发，企业级应用开发最佳首选框架","docCount":0,"id":4,"name":"Mysql 入门教程","viewCount":0,"voteCount":0}],"total":11},"msg":"成功"}
+2022-09-16 22:08:17.092 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：134 ms -------------
+2022-09-16 22:08:17.093 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：135 ms -------------
+2022-09-16 22:08:22.127 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:08:22.127 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book POST
+2022-09-16 22:08:22.127 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:08:22.128 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:08:22.128 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book POST
+2022-09-16 22:08:22.128 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.delete
+2022-09-16 22:08:22.129 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:08:22.129 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"id":4}]
+2022-09-16 22:08:22.171 DEBUG c.h.wiki.dao.mapper.EbookMapper.deleteByPrimaryKey:137  [32m                  [0;39m ==>  Preparing: delete from ebook where id = ?
+2022-09-16 22:08:22.172 DEBUG c.h.wiki.dao.mapper.EbookMapper.deleteByPrimaryKey:137  [32m                  [0;39m ==> Parameters: 4(Long)
+2022-09-16 22:08:22.258 DEBUG c.h.wiki.dao.mapper.EbookMapper.deleteByPrimaryKey:137  [32m                  [0;39m <==    Updates: 1
+2022-09-16 22:08:22.258 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"msg":"成功"}
+2022-09-16 22:08:22.258 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：130 ms -------------
+2022-09-16 22:08:22.259 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：131 ms -------------
+2022-09-16 22:08:24.862 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:08:24.862 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:08:24.862 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:08:24.863 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:08:24.863 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:08:24.863 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 22:08:24.863 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:08:24.864 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 22:08:24.909 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 22:08:24.909 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 22:08:24.958 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 22:08:24.958 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 10
+2022-09-16 22:08:24.959 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 22:08:24.959 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 22:08:24.959 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 22:08:25.264 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 22:08:25.264 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:08:25.264 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:08:25.265 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:08:25.265 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 22:08:25.265 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总条数:10
+2022-09-16 22:08:25.265 INFO  com.hosea.wiki.service.EbookService               :45   [32m                  [0;39m 总页数:4
+2022-09-16 22:08:25.265 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","docCount":0,"id":5,"name":"Oracle 入门教程","viewCount":0,"voteCount":0}],"total":10},"msg":"成功"}
+2022-09-16 22:08:25.266 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：403 ms -------------
+2022-09-16 22:08:25.267 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：405 ms -------------
+2022-09-16 22:09:29.754 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:09:29.755 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:09:29.755 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:09:29.756 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:09:29.756 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:09:29.756 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 22:09:29.756 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:09:29.757 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 22:09:29.807 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 22:09:29.807 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 22:09:29.871 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 22:09:29.872 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 10
+2022-09-16 22:09:29.872 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 22:09:29.873 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 22:09:29.873 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 22:09:29.919 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 22:09:29.920 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:09:29.920 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:09:29.922 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, null, null, 零基础入门 Oracle 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:09:29.922 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 22:09:29.923 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总条数:10
+2022-09-16 22:09:29.923 INFO  com.hosea.wiki.service.EbookService               :45   [32m                  [0;39m 总页数:4
+2022-09-16 22:09:29.923 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Oracle 开发，企业级应用开发最佳首选框架","docCount":0,"id":5,"name":"Oracle 入门教程","viewCount":0,"voteCount":0}],"total":10},"msg":"成功"}
+2022-09-16 22:09:29.923 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：167 ms -------------
+2022-09-16 22:09:29.925 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：170 ms -------------
+2022-09-16 22:09:33.278 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:09:33.278 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book POST
+2022-09-16 22:09:33.278 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:09:33.279 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:09:33.279 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book POST
+2022-09-16 22:09:33.279 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.delete
+2022-09-16 22:09:33.279 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:09:33.279 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"id":5}]
+2022-09-16 22:09:33.324 DEBUG c.h.wiki.dao.mapper.EbookMapper.deleteByPrimaryKey:137  [32m                  [0;39m ==>  Preparing: delete from ebook where id = ?
+2022-09-16 22:09:33.325 DEBUG c.h.wiki.dao.mapper.EbookMapper.deleteByPrimaryKey:137  [32m                  [0;39m ==> Parameters: 5(Long)
+2022-09-16 22:09:33.984 DEBUG c.h.wiki.dao.mapper.EbookMapper.deleteByPrimaryKey:137  [32m                  [0;39m <==    Updates: 1
+2022-09-16 22:09:33.985 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"msg":"成功"}
+2022-09-16 22:09:33.985 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：706 ms -------------
+2022-09-16 22:09:33.986 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：708 ms -------------
+2022-09-16 22:09:37.954 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:09:37.954 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book POST
+2022-09-16 22:09:37.954 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:09:37.955 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:09:37.955 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book POST
+2022-09-16 22:09:37.955 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.delete
+2022-09-16 22:09:37.955 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:09:37.955 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"id":5}]
+2022-09-16 22:09:38.001 DEBUG c.h.wiki.dao.mapper.EbookMapper.deleteByPrimaryKey:137  [32m                  [0;39m ==>  Preparing: delete from ebook where id = ?
+2022-09-16 22:09:38.001 DEBUG c.h.wiki.dao.mapper.EbookMapper.deleteByPrimaryKey:137  [32m                  [0;39m ==> Parameters: 5(Long)
+2022-09-16 22:09:38.362 DEBUG c.h.wiki.dao.mapper.EbookMapper.deleteByPrimaryKey:137  [32m                  [0;39m <==    Updates: 0
+2022-09-16 22:09:38.362 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"msg":"成功"}
+2022-09-16 22:09:38.362 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：407 ms -------------
+2022-09-16 22:09:38.363 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：409 ms -------------
+2022-09-16 22:09:41.206 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:09:41.207 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book POST
+2022-09-16 22:09:41.207 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:09:41.207 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:09:41.208 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book POST
+2022-09-16 22:09:41.208 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.delete
+2022-09-16 22:09:41.208 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:09:41.208 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"id":5}]
+2022-09-16 22:09:41.254 DEBUG c.h.wiki.dao.mapper.EbookMapper.deleteByPrimaryKey:137  [32m                  [0;39m ==>  Preparing: delete from ebook where id = ?
+2022-09-16 22:09:41.255 DEBUG c.h.wiki.dao.mapper.EbookMapper.deleteByPrimaryKey:137  [32m                  [0;39m ==> Parameters: 5(Long)
+2022-09-16 22:09:41.345 DEBUG c.h.wiki.dao.mapper.EbookMapper.deleteByPrimaryKey:137  [32m                  [0;39m <==    Updates: 0
+2022-09-16 22:09:41.346 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"msg":"成功"}
+2022-09-16 22:09:41.346 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：139 ms -------------
+2022-09-16 22:09:41.346 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：139 ms -------------
+2022-09-16 22:10:45.867 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:10:45.867 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:10:45.867 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:10:45.870 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:10:45.871 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:10:45.871 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 22:10:45.872 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:10:45.872 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 22:10:45.929 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 22:10:45.930 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 22:10:45.981 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 22:10:45.982 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 9
+2022-09-16 22:10:45.982 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 22:10:45.984 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 22:10:45.984 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 22:10:46.035 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 22:10:46.036 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:10:46.037 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:10:46.038 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 6, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:10:46.038 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 22:10:46.039 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总条数:9
+2022-09-16 22:10:46.039 INFO  com.hosea.wiki.service.EbookService               :45   [32m                  [0;39m 总页数:3
+2022-09-16 22:10:46.039 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":6,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":9},"msg":"成功"}
+2022-09-16 22:10:46.040 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：170 ms -------------
+2022-09-16 22:10:46.043 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：174 ms -------------
+2022-09-16 22:11:27.317 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:11:27.317 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:11:27.317 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:11:27.318 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:11:27.318 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:11:27.318 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 22:11:27.318 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:11:27.318 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 22:11:27.376 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 22:11:27.377 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 22:11:27.425 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 22:11:27.425 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 9
+2022-09-16 22:11:27.425 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 22:11:27.426 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 22:11:27.426 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 22:11:27.474 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 22:11:27.474 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:11:27.475 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:11:27.475 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 6, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:11:27.475 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 22:11:27.476 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总条数:9
+2022-09-16 22:11:27.476 INFO  com.hosea.wiki.service.EbookService               :45   [32m                  [0;39m 总页数:3
+2022-09-16 22:11:27.476 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":6,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":9},"msg":"成功"}
+2022-09-16 22:11:27.476 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：158 ms -------------
+2022-09-16 22:11:27.477 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：160 ms -------------
+2022-09-16 22:12:07.099 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:12:07.099 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:12:07.100 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:12:07.100 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:12:07.100 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:12:07.100 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 22:12:07.100 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:12:07.101 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 22:12:07.147 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 22:12:07.148 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 22:12:07.194 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 22:12:07.195 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 9
+2022-09-16 22:12:07.195 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 22:12:07.196 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 22:12:07.196 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 22:12:07.241 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 22:12:07.242 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:12:07.242 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:12:07.243 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 6, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:12:07.243 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 22:12:07.243 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总条数:9
+2022-09-16 22:12:07.243 INFO  com.hosea.wiki.service.EbookService               :45   [32m                  [0;39m 总页数:3
+2022-09-16 22:12:07.243 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":6,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":9},"msg":"成功"}
+2022-09-16 22:12:07.244 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：144 ms -------------
+2022-09-16 22:12:07.245 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：145 ms -------------
+2022-09-16 22:14:35.308 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:14:35.308 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:14:35.308 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:14:35.309 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:14:35.309 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:14:35.309 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 22:14:35.310 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:14:35.310 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 22:14:35.357 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 22:14:35.358 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 22:14:35.406 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 22:14:35.406 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 9
+2022-09-16 22:14:35.407 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 22:14:35.407 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 22:14:35.407 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 22:14:35.455 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 22:14:35.455 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:14:35.456 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:14:35.456 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 6, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:14:35.456 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 22:14:35.456 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总条数:9
+2022-09-16 22:14:35.456 INFO  com.hosea.wiki.service.EbookService               :45   [32m                  [0;39m 总页数:3
+2022-09-16 22:14:35.457 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":6,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":9},"msg":"成功"}
+2022-09-16 22:14:35.457 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：148 ms -------------
+2022-09-16 22:14:35.458 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：150 ms -------------
+2022-09-16 22:15:46.297 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:15:46.298 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:15:46.298 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:15:46.298 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:15:46.299 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:15:46.299 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 22:15:46.299 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:15:46.299 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 22:15:46.364 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 22:15:46.364 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 22:15:46.415 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 22:15:46.415 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 9
+2022-09-16 22:15:46.416 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 22:15:46.416 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 22:15:46.417 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 22:15:46.460 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 22:15:46.460 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:15:46.461 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:15:46.461 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 6, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:15:46.462 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 22:15:46.462 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总条数:9
+2022-09-16 22:15:46.462 INFO  com.hosea.wiki.service.EbookService               :45   [32m                  [0;39m 总页数:3
+2022-09-16 22:15:46.462 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":6,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":9},"msg":"成功"}
+2022-09-16 22:15:46.463 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：165 ms -------------
+2022-09-16 22:15:46.463 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：165 ms -------------
+2022-09-16 22:15:54.878 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:15:54.879 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book POST
+2022-09-16 22:15:54.879 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:15:54.880 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:15:54.880 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/book POST
+2022-09-16 22:15:54.880 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.delete
+2022-09-16 22:15:54.880 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:15:54.880 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"id":6}]
+2022-09-16 22:15:54.922 DEBUG c.h.wiki.dao.mapper.EbookMapper.deleteByPrimaryKey:137  [32m                  [0;39m ==>  Preparing: delete from ebook where id = ?
+2022-09-16 22:15:54.922 DEBUG c.h.wiki.dao.mapper.EbookMapper.deleteByPrimaryKey:137  [32m                  [0;39m ==> Parameters: 6(Long)
+2022-09-16 22:15:55.006 DEBUG c.h.wiki.dao.mapper.EbookMapper.deleteByPrimaryKey:137  [32m                  [0;39m <==    Updates: 1
+2022-09-16 22:15:55.007 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"msg":"成功"}
+2022-09-16 22:15:55.007 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：128 ms -------------
+2022-09-16 22:15:55.008 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：129 ms -------------
+2022-09-16 22:16:03.479 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:16:03.479 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:16:03.479 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:16:03.480 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:16:03.480 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:16:03.480 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 22:16:03.481 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:16:03.481 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 22:16:03.531 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 22:16:03.531 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 22:16:03.581 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 22:16:03.582 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 8
+2022-09-16 22:16:03.582 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 22:16:03.582 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 22:16:03.582 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 22:16:03.635 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 22:16:03.635 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:16:03.635 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:16:03.635 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 7, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:16:03.636 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 22:16:03.636 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总条数:8
+2022-09-16 22:16:03.636 INFO  com.hosea.wiki.service.EbookService               :45   [32m                  [0;39m 总页数:3
+2022-09-16 22:16:03.636 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":7,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":8},"msg":"成功"}
+2022-09-16 22:16:03.636 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：156 ms -------------
+2022-09-16 22:16:03.637 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：158 ms -------------
+2022-09-16 22:16:11.689 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:16:11.689 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:16:11.689 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:16:11.690 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:16:11.690 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:16:11.690 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 22:16:11.690 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:16:11.690 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":2,"sizeOfPage":3}]
+2022-09-16 22:16:11.739 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 22:16:11.740 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 22:16:11.789 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 22:16:11.789 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 8
+2022-09-16 22:16:11.789 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 22:16:11.790 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?, ?
+2022-09-16 22:16:11.790 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Long), 3(Integer)
+2022-09-16 22:16:11.840 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 22:16:11.840 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 8, Spring Boot 入门教程aaa, null, null, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:16:11.840 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 9, Spring Boot 入门教程, 1, 2, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:16:11.840 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 10, Java入狱, 2, 3, 零基础入门 Java入狱开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:16:11.840 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 22:16:11.841 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总条数:8
+2022-09-16 22:16:11.841 INFO  com.hosea.wiki.service.EbookService               :45   [32m                  [0;39m 总页数:3
+2022-09-16 22:16:11.841 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":8,"name":"Spring Boot 入门教程aaa","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":2,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":9,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":2,"category2Id":3,"description":"零基础入门 Java入狱开发，企业级应用开发最佳首选框架","docCount":0,"id":10,"name":"Java入狱","viewCount":0,"voteCount":0}],"total":8},"msg":"成功"}
+2022-09-16 22:16:11.841 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：151 ms -------------
+2022-09-16 22:16:11.842 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：153 ms -------------
+2022-09-16 22:16:12.911 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-16 22:16:12.911 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:16:12.911 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:16:12.912 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-16 22:16:12.912 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/ebook/list GET
+2022-09-16 22:16:12.912 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.EbookApi.getEbookList
+2022-09-16 22:16:12.912 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-16 22:16:12.912 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: [{"currentPage":1,"sizeOfPage":3}]
+2022-09-16 22:16:12.962 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-09-16 22:16:12.962 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2022-09-16 22:16:13.011 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2022-09-16 22:16:13.011 TRACE c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 8
+2022-09-16 22:16:13.011 DEBUG c.h.w.dao.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2022-09-16 22:16:13.012 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-09-16 22:16:13.012 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m ==> Parameters: 3(Integer)
+2022-09-16 22:16:13.064 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-09-16 22:16:13.065 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 2, 3, 零基础入门 Java 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:16:13.065 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 1, 4, 零基础入门 Vue 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:16:13.065 TRACE c.h.wiki.dao.mapper.EbookMapper.selectByExample   :143  [32m                  [0;39m <==        Row: 7, Python 入门教程, null, null, 零基础入门 Python 开发，企业级应用开发最佳首选框架, null, 0, 0, 0
+2022-09-16 22:16:13.065 DEBUG c.h.wiki.dao.mapper.EbookMapper.selectByExample   :137  [32m                  [0;39m <==      Total: 3
+2022-09-16 22:16:13.065 INFO  com.hosea.wiki.service.EbookService               :44   [32m                  [0;39m 总条数:8
+2022-09-16 22:16:13.066 INFO  com.hosea.wiki.service.EbookService               :45   [32m                  [0;39m 总页数:3
+2022-09-16 22:16:13.066 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"category1Id":2,"category2Id":3,"description":"零基础入门 Java 开发，企业级应用开发最佳首选框架","docCount":0,"id":1,"name":"Spring Boot 入门教程","viewCount":0,"voteCount":0},{"category1Id":1,"category2Id":4,"description":"零基础入门 Vue 开发，企业级应用开发最佳首选框架","docCount":0,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"description":"零基础入门 Python 开发，企业级应用开发最佳首选框架","docCount":0,"id":7,"name":"Python 入门教程","viewCount":0,"voteCount":0}],"total":8},"msg":"成功"}
+2022-09-16 22:16:13.066 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：154 ms -------------
+2022-09-16 22:16:13.067 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：156 ms -------------
+2022-09-16 22:31:08.532 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2022-09-16 22:31:08.852 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:31:08.852 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-16 22:31:08.853 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-09-16 22:31:08.856 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-09-16 22:31:08.856 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [HikariPool-1 connection closer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-09-16 22:31:08.857 WARN  org.apache.catalina.loader.WebappClassLoaderBase  :173  [32m                  [0;39m The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2022-09-16 22:31:08.857 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:31:08.859 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:31:08.860 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2022-09-16 22:31:08.863 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2022-09-16 22:31:09.015 INFO  com.hosea.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_231 on DESKTOP-UFTGTM0 with PID 35024 (E:\javaProject\wiki\wiki\target\classes started by heliu in E:\javaProject\wiki\wiki)
+2022-09-16 22:31:09.015 INFO  com.hosea.wiki.WikiApplication                    :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-16 22:31:09.267 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8801 (http)
+2022-09-16 22:31:09.267 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-09-16 22:31:09.267 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2022-09-16 22:31:09.267 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-09-16 22:31:09.268 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-16 22:31:09.268 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2022-09-16 22:31:09.268 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:31:09.268 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-16 22:31:09.268 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-16 22:31:09.298 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-16 22:31:09.298 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 281 ms
+2022-09-16 22:31:09.567 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-16 22:31:09.575 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:31:09.577 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8801 (http) with context path ''
+2022-09-16 22:31:09.580 INFO  com.hosea.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.595 seconds (JVM running for 1500.68)
+2022-09-16 22:31:09.582 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-16 22:31:09.582 INFO  com.hosea.wiki.WikiApplication                    :20   [32m                  [0;39m 启动成功
+2022-09-16 22:31:09.582 INFO  com.hosea.wiki.WikiApplication                    :21   [32m                  [0;39m 地址:	http://127.0.0.1:8801
+2022-09-16 22:31:10.983 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2022-09-16 22:31:11.261 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:31:11.261 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-16 22:31:11.262 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:31:11.264 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:31:11.391 INFO  com.hosea.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_231 on DESKTOP-UFTGTM0 with PID 35024 (E:\javaProject\wiki\wiki\target\classes started by heliu in E:\javaProject\wiki\wiki)
+2022-09-16 22:31:11.392 INFO  com.hosea.wiki.WikiApplication                    :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-16 22:31:11.558 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8801 (http)
+2022-09-16 22:31:11.558 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-09-16 22:31:11.558 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2022-09-16 22:31:11.558 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-09-16 22:31:11.558 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-16 22:31:11.559 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2022-09-16 22:31:11.559 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:31:11.559 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-16 22:31:11.559 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-16 22:31:11.587 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-16 22:31:11.587 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 194 ms
+2022-09-16 22:31:11.818 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-16 22:31:11.824 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:31:11.826 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8801 (http) with context path ''
+2022-09-16 22:31:11.829 INFO  com.hosea.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.461 seconds (JVM running for 1502.928)
+2022-09-16 22:31:11.829 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-16 22:31:11.829 INFO  com.hosea.wiki.WikiApplication                    :20   [32m                  [0;39m 启动成功
+2022-09-16 22:31:11.829 INFO  com.hosea.wiki.WikiApplication                    :21   [32m                  [0;39m 地址:	http://127.0.0.1:8801
+2022-09-16 22:34:16.735 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 25 class path changes (0 additions, 23 deletions, 2 modifications)
+2022-09-16 22:34:17.020 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:34:17.020 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-16 22:34:17.024 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:34:17.026 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:34:17.171 INFO  com.hosea.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_231 on DESKTOP-UFTGTM0 with PID 35024 (E:\javaProject\wiki\wiki\target\classes started by heliu in E:\javaProject\wiki\wiki)
+2022-09-16 22:34:17.172 INFO  com.hosea.wiki.WikiApplication                    :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-16 22:34:17.420 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8801 (http)
+2022-09-16 22:34:17.420 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-09-16 22:34:17.420 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2022-09-16 22:34:17.421 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-09-16 22:34:17.421 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-16 22:34:17.421 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2022-09-16 22:34:17.421 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:34:17.422 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-16 22:34:17.422 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-16 22:34:17.455 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-16 22:34:17.455 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 282 ms
+2022-09-16 22:34:17.568 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-16 22:34:17.573 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:34:17.575 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8801 (http) with context path ''
+2022-09-16 22:34:17.578 INFO  com.hosea.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.435 seconds (JVM running for 1688.677)
+2022-09-16 22:34:17.579 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-16 22:34:17.579 INFO  com.hosea.wiki.WikiApplication                    :20   [32m                  [0;39m 启动成功
+2022-09-16 22:34:17.579 INFO  com.hosea.wiki.WikiApplication                    :21   [32m                  [0;39m 地址:	http://127.0.0.1:8801
+2022-09-16 22:34:18.990 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 23 class path changes (23 additions, 0 deletions, 0 modifications)
+2022-09-16 22:34:19.334 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:34:19.334 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-16 22:34:19.335 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:34:19.337 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:34:19.429 INFO  com.hosea.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_231 on DESKTOP-UFTGTM0 with PID 35024 (E:\javaProject\wiki\wiki\target\classes started by heliu in E:\javaProject\wiki\wiki)
+2022-09-16 22:34:19.429 INFO  com.hosea.wiki.WikiApplication                    :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-16 22:34:19.590 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8801 (http)
+2022-09-16 22:34:19.590 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-09-16 22:34:19.591 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2022-09-16 22:34:19.591 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-09-16 22:34:19.591 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-16 22:34:19.591 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2022-09-16 22:34:19.591 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:34:19.592 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-16 22:34:19.592 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-16 22:34:19.617 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-16 22:34:19.617 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 187 ms
+2022-09-16 22:34:19.834 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-16 22:34:19.840 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:34:19.841 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8801 (http) with context path ''
+2022-09-16 22:34:19.843 INFO  com.hosea.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.439 seconds (JVM running for 1690.943)
+2022-09-16 22:34:19.844 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-16 22:34:19.844 INFO  com.hosea.wiki.WikiApplication                    :20   [32m                  [0;39m 启动成功
+2022-09-16 22:34:19.844 INFO  com.hosea.wiki.WikiApplication                    :21   [32m                  [0;39m 地址:	http://127.0.0.1:8801
+2022-09-16 22:39:11.584 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:213  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2022-09-16 22:39:11.878 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:39:11.878 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2022-09-16 22:39:11.881 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:39:11.883 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:39:11.992 INFO  com.hosea.wiki.WikiApplication                    :55   [32m                  [0;39m Starting WikiApplication using Java 1.8.0_231 on DESKTOP-UFTGTM0 with PID 35024 (E:\javaProject\wiki\wiki\target\classes started by heliu in E:\javaProject\wiki\wiki)
+2022-09-16 22:39:11.992 INFO  com.hosea.wiki.WikiApplication                    :634  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2022-09-16 22:39:12.211 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8801 (http)
+2022-09-16 22:39:12.211 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-09-16 22:39:12.211 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2022-09-16 22:39:12.212 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2022-09-16 22:39:12.212 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-09-16 22:39:12.212 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2022-09-16 22:39:12.212 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:39:12.212 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-09-16 22:39:12.212 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-16 22:39:12.238 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-09-16 22:39:12.238 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :292  [32m                  [0;39m Root WebApplicationContext: initialization completed in 244 ms
+2022-09-16 22:39:12.468 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2022-09-16 22:39:12.474 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8801"]
+2022-09-16 22:39:12.475 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8801 (http) with context path ''
+2022-09-16 22:39:12.478 INFO  com.hosea.wiki.WikiApplication                    :61   [32m                  [0;39m Started WikiApplication in 0.509 seconds (JVM running for 1983.578)
+2022-09-16 22:39:12.479 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-09-16 22:39:12.479 INFO  com.hosea.wiki.WikiApplication                    :20   [32m                  [0;39m 启动成功
+2022-09-16 22:39:12.479 INFO  com.hosea.wiki.WikiApplication                    :21   [32m                  [0;39m 地址:	http://127.0.0.1:8801

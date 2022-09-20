@@ -1,0 +1,348 @@
+2022-09-18 13:25:55.510 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-18 13:25:55.536 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 13:25:55.537 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 13:25:55.541 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-18 13:25:55.542 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 13:25:55.542 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.CategoryApi.getAll
+2022-09-18 13:25:55.543 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 13:25:55.543 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: []
+2022-09-18 13:25:55.598 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category
+2022-09-18 13:25:55.600 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2022-09-18 13:25:55.650 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-18 13:25:55.650 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-09-18 13:25:55.651 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-09-18 13:25:55.651 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-09-18 13:25:55.651 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-09-18 13:25:55.652 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-09-18 13:25:55.652 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-09-18 13:25:55.652 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-09-18 13:25:55.652 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-09-18 13:25:55.652 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-09-18 13:25:55.652 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-09-18 13:25:55.652 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-09-18 13:25:55.653 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-09-18 13:25:55.653 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-09-18 13:25:55.653 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-09-18 13:25:55.653 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 14
+2022-09-18 13:25:55.654 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502}]},"msg":"成功"}
+2022-09-18 13:25:55.654 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：113 ms -------------
+2022-09-18 13:25:55.659 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：122 ms -------------
+2022-09-18 22:00:56.962 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-18 22:00:56.965 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:00:56.965 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:00:56.970 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-18 22:00:56.970 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:00:56.970 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.CategoryApi.getAll
+2022-09-18 22:00:56.971 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:00:56.971 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: []
+2022-09-18 22:00:57.026 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category
+2022-09-18 22:00:57.027 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2022-09-18 22:00:57.077 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-18 22:00:57.078 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-09-18 22:00:57.078 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-09-18 22:00:57.078 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-09-18 22:00:57.079 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-09-18 22:00:57.079 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-09-18 22:00:57.079 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-09-18 22:00:57.079 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-09-18 22:00:57.079 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-09-18 22:00:57.079 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-09-18 22:00:57.080 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-09-18 22:00:57.080 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-09-18 22:00:57.080 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-09-18 22:00:57.080 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-09-18 22:00:57.080 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-09-18 22:00:57.080 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 14
+2022-09-18 22:00:57.081 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502}]},"msg":"成功"}
+2022-09-18 22:00:57.081 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：111 ms -------------
+2022-09-18 22:00:57.086 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：121 ms -------------
+2022-09-18 22:07:45.394 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-18 22:07:45.395 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:07:45.395 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:07:45.396 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-18 22:07:45.396 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:07:45.396 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.CategoryApi.getAll
+2022-09-18 22:07:45.396 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:07:45.396 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: []
+2022-09-18 22:07:45.443 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category
+2022-09-18 22:07:45.444 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2022-09-18 22:07:45.491 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-18 22:07:45.491 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-09-18 22:07:45.492 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-09-18 22:07:45.492 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-09-18 22:07:45.492 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-09-18 22:07:45.492 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-09-18 22:07:45.492 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-09-18 22:07:45.492 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-09-18 22:07:45.493 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-09-18 22:07:45.493 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-09-18 22:07:45.493 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-09-18 22:07:45.494 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-09-18 22:07:45.494 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-09-18 22:07:45.494 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-09-18 22:07:45.494 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-09-18 22:07:45.494 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 14
+2022-09-18 22:07:45.495 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502}]},"msg":"成功"}
+2022-09-18 22:07:45.495 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：99 ms -------------
+2022-09-18 22:07:45.496 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：101 ms -------------
+2022-09-18 22:13:15.565 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-18 22:13:15.565 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:13:15.565 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:13:15.566 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-18 22:13:15.566 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:13:15.566 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.CategoryApi.getAll
+2022-09-18 22:13:15.566 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:13:15.566 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: []
+2022-09-18 22:13:15.614 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category
+2022-09-18 22:13:15.615 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2022-09-18 22:13:15.661 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-18 22:13:15.661 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-09-18 22:13:15.661 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-09-18 22:13:15.662 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-09-18 22:13:15.662 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-09-18 22:13:15.662 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-09-18 22:13:15.662 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-09-18 22:13:15.662 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-09-18 22:13:15.663 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-09-18 22:13:15.663 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-09-18 22:13:15.663 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-09-18 22:13:15.663 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-09-18 22:13:15.663 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-09-18 22:13:15.663 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-09-18 22:13:15.664 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-09-18 22:13:15.664 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 14
+2022-09-18 22:13:15.664 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502}]},"msg":"成功"}
+2022-09-18 22:13:15.664 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：98 ms -------------
+2022-09-18 22:13:15.665 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：100 ms -------------
+2022-09-18 22:13:26.633 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-18 22:13:26.634 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:13:26.634 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:13:26.634 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-18 22:13:26.635 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:13:26.635 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.CategoryApi.getAll
+2022-09-18 22:13:26.635 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:13:26.635 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: []
+2022-09-18 22:13:26.681 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category
+2022-09-18 22:13:26.681 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2022-09-18 22:13:26.727 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-18 22:13:26.727 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-09-18 22:13:26.728 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-09-18 22:13:26.728 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-09-18 22:13:26.728 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-09-18 22:13:26.728 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-09-18 22:13:26.728 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-09-18 22:13:26.728 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-09-18 22:13:26.728 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-09-18 22:13:26.728 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-09-18 22:13:26.729 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-09-18 22:13:26.729 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-09-18 22:13:26.729 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-09-18 22:13:26.729 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-09-18 22:13:26.729 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-09-18 22:13:26.729 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 14
+2022-09-18 22:13:26.730 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502}]},"msg":"成功"}
+2022-09-18 22:13:26.730 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：96 ms -------------
+2022-09-18 22:13:26.731 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：97 ms -------------
+2022-09-18 22:13:41.713 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-18 22:13:41.713 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:13:41.713 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:13:41.718 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-18 22:13:41.718 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:13:41.718 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.CategoryApi.getAll
+2022-09-18 22:13:41.718 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:13:41.718 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: []
+2022-09-18 22:13:41.772 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category
+2022-09-18 22:13:41.772 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2022-09-18 22:13:41.826 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-18 22:13:41.827 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-09-18 22:13:41.827 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-09-18 22:13:41.827 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-09-18 22:13:41.827 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-09-18 22:13:41.828 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-09-18 22:13:41.828 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-09-18 22:13:41.828 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-09-18 22:13:41.828 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-09-18 22:13:41.828 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-09-18 22:13:41.828 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-09-18 22:13:41.829 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-09-18 22:13:41.829 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-09-18 22:13:41.829 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-09-18 22:13:41.829 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-09-18 22:13:41.829 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 14
+2022-09-18 22:13:41.831 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502}]},"msg":"成功"}
+2022-09-18 22:13:41.831 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：115 ms -------------
+2022-09-18 22:13:41.832 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：119 ms -------------
+2022-09-18 22:13:48.325 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-18 22:13:48.325 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:13:48.325 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:13:48.327 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-18 22:13:48.327 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:13:48.327 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.CategoryApi.getAll
+2022-09-18 22:13:48.327 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:13:48.328 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: []
+2022-09-18 22:13:48.378 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category
+2022-09-18 22:13:48.379 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2022-09-18 22:13:48.429 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-18 22:13:48.430 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-09-18 22:13:48.430 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-09-18 22:13:48.430 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-09-18 22:13:48.430 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-09-18 22:13:48.430 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-09-18 22:13:48.430 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-09-18 22:13:48.431 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-09-18 22:13:48.431 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-09-18 22:13:48.431 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-09-18 22:13:48.431 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-09-18 22:13:48.431 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-09-18 22:13:48.431 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-09-18 22:13:48.431 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-09-18 22:13:48.431 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-09-18 22:13:48.432 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 14
+2022-09-18 22:13:48.432 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502}]},"msg":"成功"}
+2022-09-18 22:13:48.432 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：105 ms -------------
+2022-09-18 22:13:48.433 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：108 ms -------------
+2022-09-18 22:14:58.862 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-18 22:14:58.862 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:14:58.862 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:14:58.863 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-18 22:14:58.863 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:14:58.863 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.CategoryApi.getAll
+2022-09-18 22:14:58.863 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:14:58.863 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: []
+2022-09-18 22:14:58.912 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category
+2022-09-18 22:14:58.913 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2022-09-18 22:14:58.960 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-18 22:14:58.961 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-09-18 22:14:58.961 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-09-18 22:14:58.961 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-09-18 22:14:58.961 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-09-18 22:14:58.962 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-09-18 22:14:58.962 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-09-18 22:14:58.962 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-09-18 22:14:58.962 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-09-18 22:14:58.962 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-09-18 22:14:58.962 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-09-18 22:14:58.963 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-09-18 22:14:58.963 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-09-18 22:14:58.963 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-09-18 22:14:58.963 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-09-18 22:14:58.963 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 14
+2022-09-18 22:14:58.964 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502}]},"msg":"成功"}
+2022-09-18 22:14:58.964 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：101 ms -------------
+2022-09-18 22:14:58.965 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：103 ms -------------
+2022-09-18 22:15:47.154 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-18 22:15:47.154 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:15:47.154 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:15:47.155 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-18 22:15:47.155 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:15:47.155 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.CategoryApi.getAll
+2022-09-18 22:15:47.155 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:15:47.155 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: []
+2022-09-18 22:15:47.213 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category
+2022-09-18 22:15:47.213 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2022-09-18 22:15:47.264 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-18 22:15:47.264 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-09-18 22:15:47.264 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-09-18 22:15:47.265 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-09-18 22:15:47.265 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-09-18 22:15:47.265 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-09-18 22:15:47.265 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-09-18 22:15:47.265 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-09-18 22:15:47.265 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-09-18 22:15:47.265 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-09-18 22:15:47.266 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-09-18 22:15:47.266 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-09-18 22:15:47.266 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-09-18 22:15:47.266 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-09-18 22:15:47.266 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-09-18 22:15:47.266 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 14
+2022-09-18 22:15:47.267 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502}]},"msg":"成功"}
+2022-09-18 22:15:47.267 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：112 ms -------------
+2022-09-18 22:15:47.267 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：113 ms -------------
+2022-09-18 22:15:53.921 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-18 22:15:53.921 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:15:53.921 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:15:53.922 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-18 22:15:53.922 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:15:53.922 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.CategoryApi.getAll
+2022-09-18 22:15:53.922 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:15:53.922 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: []
+2022-09-18 22:15:53.971 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category
+2022-09-18 22:15:53.971 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2022-09-18 22:15:54.020 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-18 22:15:54.020 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-09-18 22:15:54.021 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-09-18 22:15:54.021 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-09-18 22:15:54.021 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-09-18 22:15:54.021 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-09-18 22:15:54.021 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-09-18 22:15:54.021 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-09-18 22:15:54.021 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-09-18 22:15:54.022 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-09-18 22:15:54.022 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-09-18 22:15:54.022 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-09-18 22:15:54.022 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-09-18 22:15:54.022 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-09-18 22:15:54.022 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-09-18 22:15:54.023 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 14
+2022-09-18 22:15:54.023 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502}]},"msg":"成功"}
+2022-09-18 22:15:54.024 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：102 ms -------------
+2022-09-18 22:15:54.025 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：104 ms -------------
+2022-09-18 22:17:13.485 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-18 22:17:13.486 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:17:13.486 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:17:13.486 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-18 22:17:13.486 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:17:13.487 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.CategoryApi.getAll
+2022-09-18 22:17:13.487 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:17:13.487 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: []
+2022-09-18 22:17:13.534 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category
+2022-09-18 22:17:13.535 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2022-09-18 22:17:13.580 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-18 22:17:13.581 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-09-18 22:17:13.581 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-09-18 22:17:13.581 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-09-18 22:17:13.581 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-09-18 22:17:13.581 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-09-18 22:17:13.582 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-09-18 22:17:13.582 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-09-18 22:17:13.582 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-09-18 22:17:13.582 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-09-18 22:17:13.582 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-09-18 22:17:13.582 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-09-18 22:17:13.583 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-09-18 22:17:13.583 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-09-18 22:17:13.583 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-09-18 22:17:13.583 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 14
+2022-09-18 22:17:13.583 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502}]},"msg":"成功"}
+2022-09-18 22:17:13.583 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：97 ms -------------
+2022-09-18 22:17:13.584 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：98 ms -------------
+2022-09-18 22:27:58.577 INFO  com.hosea.wiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-09-18 22:27:58.577 INFO  com.hosea.wiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:27:58.577 INFO  com.hosea.wiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:27:58.577 INFO  com.hosea.wiki.aspect.LogAspect                   :50   [32m                  [0;39m ------------- 开始 -------------
+2022-09-18 22:27:58.578 INFO  com.hosea.wiki.aspect.LogAspect                   :51   [32m                  [0;39m 请求地址: http://localhost:8801/category/all GET
+2022-09-18 22:27:58.578 INFO  com.hosea.wiki.aspect.LogAspect                   :52   [32m                  [0;39m 类名方法: com.hosea.wiki.api.CategoryApi.getAll
+2022-09-18 22:27:58.578 INFO  com.hosea.wiki.aspect.LogAspect                   :53   [32m                  [0;39m 远程地址: 0:0:0:0:0:0:0:1
+2022-09-18 22:27:58.578 INFO  com.hosea.wiki.aspect.LogAspect                   :75   [32m                  [0;39m 请求参数: []
+2022-09-18 22:27:58.622 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category
+2022-09-18 22:27:58.623 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m ==> Parameters: 
+2022-09-18 22:27:58.665 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2022-09-18 22:27:58.665 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2022-09-18 22:27:58.666 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2022-09-18 22:27:58.666 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2022-09-18 22:27:58.666 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2022-09-18 22:27:58.666 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2022-09-18 22:27:58.667 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 202, 200, 框架应用, 202
+2022-09-18 22:27:58.667 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2022-09-18 22:27:58.667 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2022-09-18 22:27:58.667 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2022-09-18 22:27:58.668 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2022-09-18 22:27:58.668 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2022-09-18 22:27:58.668 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 500, 0, 其它, 500
+2022-09-18 22:27:58.668 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2022-09-18 22:27:58.668 TRACE c.h.wiki.dao.mapper.CategoryMapper.selectByExample:143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2022-09-18 22:27:58.669 DEBUG c.h.wiki.dao.mapper.CategoryMapper.selectByExample:137  [32m                  [0;39m <==      Total: 14
+2022-09-18 22:27:58.669 INFO  com.hosea.wiki.aspect.LogAspect                   :87   [32m                  [0;39m 返回结果: {"code":0,"data":{"list":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架应用","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":500,"name":"其它","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502}]},"msg":"成功"}
+2022-09-18 22:27:58.669 INFO  com.hosea.wiki.aspect.LogAspect                   :88   [32m                  [0;39m ------------- 结束 耗时：92 ms -------------
+2022-09-18 22:27:58.671 INFO  com.hosea.wiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：94 ms -------------

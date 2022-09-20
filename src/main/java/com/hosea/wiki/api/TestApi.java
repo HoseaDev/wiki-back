@@ -1,0 +1,18 @@
+package com.hosea.wiki.api;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class TestApi {
+
+    @Value("${test.hello:gogo}")
+    private String hello;
+
+    @RequestMapping("/hello")
+    public String hello(String name) {
+        System.out.println("bbbbaaasss:" + name);
+        return "hello world!     " + hello;
+    }
+}

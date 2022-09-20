@@ -1,0 +1,16 @@
+POST http://localhost:8801/hello
+Content-Type: application/x-www-form-urlencoded
+
+name="123"
+
+<> 2022-09-09T123413.200.txt
+<> 2022-09-09T123410.200.txt
+<> 2022-09-09T123406.200.txt
+<> 2022-09-09T123312.200.txt
+
+###
+GET http://localhost:8801/hello?name=123
+
+<> 2022-09-09T123521.200.txt
+<> 2022-09-09T123514.200.txt
+<> 2022-09-09T123506.200.txt
