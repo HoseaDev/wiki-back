@@ -1,23 +1,19 @@
-package com.hosea.wiki.dao.domain;
+package com.hosea.wiki.resp;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
-public class Category {
+public class CategoryResp {
 
+
+    @JsonSerialize(using = ToStringSerializer.class)
     private Long id;
-
+    @JsonSerialize(using = ToStringSerializer.class)
     private Long parent;
 
     private String name;
 
     private Integer sort;
 
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public Long getParent() {
         return parent;
@@ -55,5 +51,13 @@ public class Category {
         sb.append(", sort=").append(sort);
         sb.append("]");
         return sb.toString();
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }

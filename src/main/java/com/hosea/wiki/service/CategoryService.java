@@ -5,6 +5,9 @@ import com.hosea.wiki.dao.domain.CategoryExample;
 import com.hosea.wiki.dao.domain.Test;
 import com.hosea.wiki.dao.mapper.CategoryMapper;
 import com.hosea.wiki.dao.mapper.TestMapper;
+import com.hosea.wiki.request.CategoryReq;
+import com.hosea.wiki.resp.CategoryResp;
+import com.hosea.wiki.utils.CopyUtil;
 import com.hosea.wiki.utils.SnowFlake;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -47,7 +50,8 @@ public class CategoryService {
     }
 
 
-    public void save(Category category) {
+    public void save(CategoryReq req) {
+        Category category = CopyUtil.copy(req, Category.class);
         if (category.getId() == null) {
             long id = snowFlake.nextId();
             category.setId(id);
@@ -59,7 +63,12 @@ public class CategoryService {
     }
 
     public void delete(Long id) {
-        categoryMapper.deleteByPrimaryKey(id);
+        CategoryExample example = new CategoryExample();
+        example.createCriteria().andParentEqualTo(id);
+        Category category = new Category();
+        category.setParent(0L);
+//        categoryMapper.deleteByPrimaryKey(id);
+        categoryMapper.updateByExampleSelective(category,example);
     }
 
 
@@ -68,10 +77,12 @@ public class CategoryService {
     }
 
 
-    public List<Category> getAll() {
+    public List<CategoryResp> getAll() {
         CategoryExample categoryExample = new CategoryExample();
         List<Category> categorys = categoryMapper.selectByExample(categoryExample);
-
-        return categorys;
+        logger.info(categorys.toString());
+        List<CategoryResp> list = CopyUtil.copyList(categorys, CategoryResp.class);
+        logger.info(list.toString());
+        return list;
     }
 }

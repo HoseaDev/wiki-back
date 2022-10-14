@@ -1,7 +1,6 @@
-package com.hosea.wiki.dao.domain;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
-public class Category {
+package com.hosea.wiki.request;
+
+public class CategoryReq {
 
     private Long id;
 

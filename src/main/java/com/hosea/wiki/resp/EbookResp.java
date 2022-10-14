@@ -1,15 +1,22 @@
-package com.hosea.wiki.dao.domain;
+package com.hosea.wiki.resp;
+
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 
 import javax.validation.constraints.NotNull;
 
-public class Ebook {
+public class EbookResp {
 
+
+    @JsonSerialize(using = ToStringSerializer.class)
     private Long id;
 
     private String name;
 
+    @JsonSerialize(using = ToStringSerializer.class)
     private Long category1Id;
 
+    @JsonSerialize(using = ToStringSerializer.class)
     private Long category2Id;
 
     private String description;
@@ -21,6 +28,7 @@ public class Ebook {
     private Integer viewCount;
 
     private Integer voteCount;
+
 
     public Long getId() {
         return id;

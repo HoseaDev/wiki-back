@@ -1,7 +1,8 @@
 package com.hosea.wiki.api;
 
-import com.hosea.wiki.dao.domain.Ebook;
-import com.hosea.wiki.dao.dto.EBookDto;
+
+import com.hosea.wiki.request.EbookReq;
+import com.hosea.wiki.resp.EbookResp;
 import com.hosea.wiki.resp.JsonResponse;
 import com.hosea.wiki.resp.PageResponse;
 import com.hosea.wiki.service.EbookService;
@@ -22,13 +23,13 @@ public class EbookApi {
 
 
     @GetMapping("/list")
-    public JsonResponse<PageResponse<Ebook>> getEbookList(@Valid EBookDto bookDto) {
-        PageResponse<Ebook> list = ebookService.getList(bookDto);
+    public JsonResponse<PageResponse<EbookResp>> getEbookList(@Valid EbookReq bookDto) {
+        PageResponse<EbookResp> list = ebookService.getList(bookDto);
         return new JsonResponse(list);
     }
 
     @PostMapping("/save")
-    public JsonResponse save(@RequestBody Ebook ebook) {
+    public JsonResponse save(@RequestBody EbookReq ebook) {
         logger.info(ebook.toString());
         ebookService.save(ebook);
         return JsonResponse.success();

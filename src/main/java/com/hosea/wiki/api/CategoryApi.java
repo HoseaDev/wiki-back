@@ -1,7 +1,9 @@
 package com.hosea.wiki.api;
 
 import com.hosea.wiki.dao.domain.Category;
+import com.hosea.wiki.request.CategoryReq;
 import com.hosea.wiki.resp.BaseArrayResponse;
+import com.hosea.wiki.resp.CategoryResp;
 import com.hosea.wiki.resp.JsonResponse;
 import com.hosea.wiki.service.CategoryService;
 import org.slf4j.Logger;
@@ -26,15 +28,15 @@ public class CategoryApi {
 //        return new JsonResponse(list);
 //    }
     @GetMapping("/all")
-    public JsonResponse<BaseArrayResponse<Category>> getAll() {
-        List<Category> list = categoryService.getAll();
+    public JsonResponse<BaseArrayResponse<CategoryResp>> getAll() {
+        List<CategoryResp> list = categoryService.getAll();
         return new JsonResponse(new BaseArrayResponse(list));
     }
 
     @PostMapping("/save")
-    public JsonResponse save(@RequestBody Category category) {
-        logger.info(category.toString());
-        categoryService.save(category);
+    public JsonResponse save(@RequestBody CategoryReq categoryReq) {
+        logger.info(categoryReq.toString());
+        categoryService.save(categoryReq);
         return JsonResponse.success();
     }
 
